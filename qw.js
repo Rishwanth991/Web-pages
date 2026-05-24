@@ -1,0 +1,12 @@
+var x=10;
+console.log(x);
+console.log(typeof(x));
+var y="rishwanth";
+console.log(y);
+console.log(typeof(y));
+var z=true;
+console.log(z);
+console.log(typeof(z));
+var c=23.67;
+console.log(c);
+console.log(typeof(c));

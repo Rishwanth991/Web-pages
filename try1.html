@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <form name="rishwanth"/>
+    <p style="text-align:center">
+        <input type="text" name="tpname"/>
+        <input type="button"value="click me"onclick="major()"/>
+
+        </p>
+    </form>
+</hr>
+    <h3 id="response" style="text-align:center;color:green"/h3>
+    <script type="text/javascript">
+        function major() {
+            var name = rishwanth.tpname.value;
+            if (name) {
+                document.getElementById("response").innerHTML="Hi "+name;
+            } else {
+                alert ("please enter your name");
+            }
+        }
+        
+    </script>
+</body>
+</html>

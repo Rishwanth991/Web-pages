@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <form name="rishwanth">
+        <p style ="text-align: center">
+            <label>Name of person</label>
+            <input type="text" name="txtpname"/>
+            <input type="button" value="hit me" onclick="fun()"/>
+                        </p>
+    </form>
+    <hr/>
+    <h1 id="res" style="text-align:center;color:green"> </h1>
+    <script type="text/javascript">
+    function fun()
+    {
+        var pname = rishwanth.txtpname.value;
+
+        if(pname != "")
+        {
+            document.getElementById("res").innerHTML =  "Hi " + pname + ", welcome to JavaScript";
+        }
+        else
+        {
+            alert("Please enter your name");
+        }
+    }
+</script>
+</body>
+</html>

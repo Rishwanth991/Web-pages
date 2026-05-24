@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-warning">
+    
+    <nav class="navbar navbar-expand-lg bg-info">
+      <div class="container-fluid">
+         <div class="container-fluid">
+
+      <img src="https://github.com/venugopalarumuru1978/OrbitPythonFsd/blob/master/pic1.jpg?raw=true" width="25" height="25"/>
+      
+           
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarex" aria-controls="navbarex" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+
+        <div class="collapse navbar-collapse" id="navbarex">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="LoginBoot.html">Login</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="RegBoot.html">Register</a>
+          </li>
+          <div class="collapse navbar-collapse" id="navbarex">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="HOMELOGIN.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="homework.html">HOMEWORK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="tableex.html">tabular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="threecard.html">cards</a>
+          </li>
+
+
+
+        </ul>
+        
+        </div>
+    </nav>    
+
+<br />
+    
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3"  ></div>
+          <div class="col-lg-6" >
+            <div class="card">
+                <div class="card-header">calculations</div>
+                <div class="card-body">
+                <form name="frmcal">
+                    <label>value-1</label>
+                    <input type="text" 
+       name="txtValue1"
+       class="form-control"
+       placeholder="Enter value ">
+                    <br />
+                    <label>value-2</label>
+                    <input type="text" name="txtValue2" class="form-control" placeholder="Enter value 2"/>
+                    <br />
+                </br>
+                    <input type="button" value="Calculate" class="btn btn-primary" onclick="calfun()" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="Clear" class="btn btn-danger" onclick="clearinfo()" />
+                </form>
+            </br>
+            <div id="resinfo"></div>
+                </div>
+    </script>
+  </body>
+            </div>
+            </div>
+            </div>
+
+            
+          </div>
+          <div class="col-lg-3" ></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        function calfun()
+        {
+            let x=parseFloat(frmcal.txtValue1.value);
+            let y=parseFloat(frmcal.txtValue2.value);
+            let sum=x+y;
+            let sub=x-y;
+            let mul=x*y;
+            let div=x/y;
+            let result="add = "+sum + "<br/>" +"MINUS="+sub;
+            result += "<br/>" +"MULTIPLY="+mul + "<br/>" +"DIVIDE="+div;
+            document.getElementById("resinfo").innerHTML=result;
+        }
+        function clearinfo()
+            {
+                document.getElementById("resinfo").innerHTML="";
+            }
+        
+    </script>
+  </body>
+</html>
