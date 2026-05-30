@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Modal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <div class="container mt-5">
+
+        <!-- Button to Open Modal -->
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#abc">
+            Open Modal
+        </button>
+
+    </div>
+
+    <!-- Modal Start -->
+    <div class="modal fade" id="abc">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <!-- Header -->
+                <div class="modal-header bg-info text-white">
+
+                    <h4 class="modal-title">Modal Heading</h4>
+
+                    <button type="button" class="btn-close"
+                    data-bs-dismiss="modal"></button>
+
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body bg-warning">
+
+                    <input type="text" class="form-control mb-3"
+                    placeholder="Enter Name">
+
+                    <input type="text" class="form-control mb-3"
+                    placeholder="Enter Email">
+
+                    <input type="text" class="form-control"
+                    placeholder="Enter Mobile">
+
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+
+                    <button type="button"
+                    class="btn btn-danger"
+                    data-bs-dismiss="modal">
+
+                        Close
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Modal End -->
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

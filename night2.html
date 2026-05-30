@@ -2,38 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+        body
+        {
+            background:linear-gradient(45deg,coral,lightgreen,coral);
+            text-align:center;
+            padding:20px;
+            font-family:"Comic Sans Ms",sans-serif;
+        }
+        .roh
+        {
+            background:yellow;
+            width:400px;
+            margin:auto;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px black;
+        }
+        .ris
+        {
+            background:lightgreen;
+            width:400px;
+            margin:auto;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px black;
+        }
+        .ran
+        {
+            background:red;
+            width:400px;
+            margin:auto;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px black;
+        }
+    </style>
 </head>
-<body style="background-color:lightsalmon;text-align:center;"></body>
-
+<body>
+    <div class="roh">
+    <h2>Skill Section</h2>
     <form>
-        <div>
-            <h2><b><i>Student Registration form</i></b></h2>
-            <label><i>Username</i></label>
-            <input type="text "name="username" placeholder="Enter your username" required><br><br>
-            <label><i>Password</i></label>
-            <input type="password" name="password" placeholder="Enter your password" required><br><br>
-            <label><i>Email</i></label>
-            <input type="email" name="email" placeholder="enter your mail id"required><br><br>
-            <label><i>Upload your resume</i></label>
-            <input type="file"name="resume" required><br><br>
-            <label><i>Date of Birth</i></label>
-            <input type="date" name="dob" placeholder='D-O-B'required><br><br>
-            <label>Gender</label>
-            <input type="radio" name="Gender" value="Male">Male
-            <input type="radio" name="Gender" value="Female">Female
-            <br><br>
-            <label><i>Hobbies</i></label>
-            <input type="checkbox" name="hobbies" value="cricket">Cricket
-            <input type="checkbox" name="hobbies" value="football">Football
-            <input type="checkbox" name="hobbies" value="NO TALENT">Nak em ravu
-            <br><br>
-            <label><i>Phone number</i></label>
-            <input type="tel" name='phone' placeholder="Enter phno" required><br><br>
-            <label>Course</label>
-            <input type="text" name="course" placeholder="Ex:bsc, bcom, btech" required><br><br>
-        </div>
+        <label>HTML</label>
+        <input type="checkbox">
+        <label>CSS</label>
+        <input type="checkbox">
+        <label>JAVASCRIPT</label>
+        <input type="checkbox">
+        <label>BOOTSTRAP</label>
+        <input type="checkbox">
+
     </form>
+    </div>
+    <br>
+    <br>
+    <div class="ris">
+        <h2>Gender selection</h2>
+        <form>
+            <label>Gender:</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">female
+            <input type="radio" name="gender">others
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="ran">
+        <h3>Registration Form</h3>
+        <form>
+            <label>Choose your Course</label>
+            <form>
+                <select>
+                    <option value="">Select a course</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="B.sc">B.sc</option>
+                    <option value="M.sc">M.sc</option>
+                </select>
+            </form>
+        </form>
+    </div>
 </body>
 </html>
